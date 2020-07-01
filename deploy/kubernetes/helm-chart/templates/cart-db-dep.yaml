@@ -1,12 +1,15 @@
----
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: carts-db
   labels:
     name: carts-db
+  namespace: sock-helm
 spec:
   replicas: 1
+  selector:
+      matchLabels:
+        name: carts-db
   template:
     metadata:
       labels:
@@ -34,3 +37,5 @@ spec:
         - name: tmp-volume
           emptyDir:
             medium: Memory
+      nodeSelector:
+        beta.kubernetes.io/os: linux

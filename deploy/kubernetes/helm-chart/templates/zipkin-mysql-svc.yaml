@@ -7,7 +7,6 @@ metadata:
     name: zipkin-mysql
 spec:
   ports:
-    # the port that this service should serve on
   - port: 3306
     targetPort: 3306
   selector:

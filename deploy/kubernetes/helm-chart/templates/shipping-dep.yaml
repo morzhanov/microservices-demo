@@ -1,5 +1,4 @@
----
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: shipping
@@ -7,6 +6,9 @@ metadata:
     name: shipping
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: shipping
   template:
     metadata:
       labels:
@@ -59,4 +61,3 @@ spec:
         - name: tmp-volume
           emptyDir:
             medium: Memory
-

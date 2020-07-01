@@ -1,5 +1,5 @@
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: orders
@@ -7,6 +7,9 @@ metadata:
     name: orders
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: orders
   template:
     metadata:
       labels:
@@ -59,4 +62,3 @@ spec:
         - name: tmp-volume
           emptyDir:
             medium: Memory
-

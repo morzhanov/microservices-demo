@@ -25,13 +25,6 @@ spec:
         {{- end }}
          - name: JAVA_OPTS
            value: {{ .Values.java.options }}
-        resources:
-          limits:
-            cpu: 300m
-            memory: 2000Mi
-          requests:
-            cpu: 300m
-            memory: 2000Mi
         ports:
         - containerPort: 80
         securityContext:

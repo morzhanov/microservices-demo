@@ -18,13 +18,6 @@ spec:
       containers:
       - name: user
         image: weaveworksdemos/user:0.4.4
-        resources:
-          limits:
-            cpu: 300m
-            memory: 1000Mi
-          requests:
-            cpu: 100m
-            memory: 400Mi
         ports:
         - containerPort: 80
         env:

@@ -5,6 +5,7 @@ metadata:
   name: zipkin-mysql
   labels:
     name: zipkin-mysql
+  namespace: sock-shop
 spec:
   replicas: 1
   selector:

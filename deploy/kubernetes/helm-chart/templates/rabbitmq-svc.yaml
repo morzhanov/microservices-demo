@@ -4,6 +4,7 @@ metadata:
   name: rabbitmq
   labels:
     name: rabbitmq
+  namespace: sock-shop
 spec:
   ports:
   - port: 5672

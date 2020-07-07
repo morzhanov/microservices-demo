@@ -4,6 +4,7 @@ metadata:
   name: user
   labels:
     name: user
+  namespace: sock-shop
 spec:
   ports:
   - port: 80

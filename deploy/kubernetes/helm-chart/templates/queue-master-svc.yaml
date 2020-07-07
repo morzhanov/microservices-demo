@@ -6,6 +6,7 @@ metadata:
     name: queue-master
   annotations:
     prometheus.io/path: "/prometheus"
+  namespace: sock-shop
 spec:
   ports:
   - port: 80

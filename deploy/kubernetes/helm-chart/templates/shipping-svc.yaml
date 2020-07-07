@@ -4,6 +4,7 @@ metadata:
   name: shipping
   labels:
     name: shipping
+  namespace: sock-shop
 spec:
   ports:
   - port: 80

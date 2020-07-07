@@ -4,7 +4,7 @@ metadata:
   name: carts-db
   labels:
     name: carts-db
-  namespace: sock-helm
+  namespace: sock-shop
 spec:
   ports:
   - port: 27017

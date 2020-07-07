@@ -4,6 +4,7 @@ metadata:
   name: payment
   labels:
     name: payment
+  namespace: sock-shop
 spec:
   ports:
   - port: 80

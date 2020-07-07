@@ -5,6 +5,7 @@ metadata:
   name: zipkin
   labels:
     name: zipkin
+  namespace: sock-shop
 spec:
   type: NodePort
   ports:
